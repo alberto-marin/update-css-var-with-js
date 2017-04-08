@@ -19,15 +19,23 @@
         <label for="blur">Blur:</label>
         <input type="range" name="blur" value="0" min="0" max="25" data-sizing="px">
       </p>
-      <p>
-        <label for="base">Base Color</label>
-        <input type="color" name="base" value="#f1879e" class="jscolor" onchange="update(this.jscolor)">
-      </p>
     </div>
+    <p>
+      <label for="base">Base Color</label>
+      <input type="color" name="base" value="#f1879e" class="jscolor" onchange="update(this.value)">
+    </p>
     <img class="image" src="img/hourglass-1875812_640.jpg" alt="Egg timer" width="320px">
   </div>
 
   <script src="js/jscolor.js"></script>
+  <script>
+    function update (jscolor) {
+    // 'jscolor' instance can be used as a string
+    console.log(jscolor);
+    document.getElementsByClassName('image')[0].style.background = jscolor;
+    console.log(document.getElementsByClassName('image')[0].style.background);
+  }
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

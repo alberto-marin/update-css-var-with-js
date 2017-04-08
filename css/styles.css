@@ -1,0 +1,27 @@
+:root {
+  --base: #f1879e;
+  --spacing: 10px;
+  --blur: 0px;
+}
+body {
+  background-color: #d8d9dc;
+  color: #534576;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image  {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.highlight { color: var(--base); }
+
+.controls { padding: 10px; }

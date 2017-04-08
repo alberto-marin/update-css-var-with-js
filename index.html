@@ -8,8 +8,25 @@
   <title>Updating CSS Variables with JS</title>
 </head>
 <body>
+  <div class="wrapper">
+    <h1>Update CSS Variables with <span class="highlight">JS</span></h1>
+    <div class="controls">
+      <p>
+        <label for="spacing">Spacing:</label>
+        <input type="range" name="spacing" value="10" min="10" max="64" data-sizing="px">
+      </p>
+      <p>
+        <label for="blur">Blur:</label>
+        <input type="range" name="blur" value="0" min="0" max="25" data-sizing="px">
+      </p>
+      <p>
+        <label for="base">Base Color</label>
+        <input type="color" name="base" value="#f1879e">
+      </p>
+    </div>
+    <img class="image" src="img/hourglass-1875812_640.jpg" alt="Egg timer" width="320px">
+  </div>
 
   <script src="js/main.js"></script>
-
 </body>
 </html>
